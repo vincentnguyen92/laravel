@@ -12,5 +12,6 @@
 */
 
 Route::get('/', function () {
+	Log::channel('slack')->error('Nothing...');
     return view('welcome');
 });
